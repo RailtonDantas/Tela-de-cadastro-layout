@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"cafe" ;
+    src: url("../fontes/Louis George Cafe.ttf") format("truetype");
+}
+
+ @keyframes mudacor{
+    0%{box-shadow:0px 0px 50px 50px rgb(212,0,255) ;
+       scale:1;
+       background-color: rgb(212,0,255);
+    }
+    25%{
+        box-shadow: 0px 0px 50px 50px rgb(87, 0, 87);
+        scale: 1;
+        background-color: rgb(87,0,87);
+    }
+    50%{
+        box-shadow: 0px 0px 50px 50px rgb(255, 0, 200);
+        scale: 1;
+        background-color: rgb(255, 0, 200);
+    }
+    75%{
+        box-shadow: 0px 0px 50px 50px rgb(119, 0, 255);
+        scale: 1;
+        background-color: rgb(119, 0, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 50px 50px rgb(145, 8, 65);
+        scale: 1;
+        background-color: rgb(145,0,65);
+    }
+    
+ }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../imagens/5430284.jpg");
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-family: "cafe";
+    font-size: 1.2em;
+    text-align: center;
+    translate: 0px -15px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.822);
+    text-shadow: 0px 0px 3px black;
+}
+.contcircle{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contcad{
+    background-color: rgba(255, 0, 179, 0.062);
+    min-width:85vw;
+    height: 380px;
+    border:2px solid rgba(0, 0, 0, 0.212);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0px 10px 0px 10px ;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(212, 0, 255);
+    border-radius: 50%;
+    opacity: 30%;
+    box-shadow: 0px 0px 50px 50px rgb(212,0,255);
+    animation-name: mudacor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.circle:nth-child(1){
+    align-self: flex-end;
+    translate: -20px 435px;
+}
+.circle:nth-child(2){
+    align-self: flex-start;
+    translate:20px 14px;
+}
+fieldset{
+    border: 0px ;
+}
+.item{
+    background-color: rgba(255, 0, 221, 0.144);
+    margin-bottom: 30px;
+    width: 95%;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.39);
+    transition-duration: 0.5s;
+}
+label{
+    font-family: "cafe";
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.404);
+}
+input{
+    width: 200px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    height: 20px;
+    font-family: "cafe";
+    color: antiquewhite;
+    font-weight: bold;
+}
+.item2{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    translate: 75px 0px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+.buttons{
+    font-size: 1em;
+    height: 20px;
+    cursor: pointer;
+}
+.item2:hover{
+    box-shadow: 0px 0px 10px 2px rgba(128, 0, 128, 0.301);
+    background-color: purple ;
+    scale: 1.1;
+    border: .5px solid rgba(0, 0, 0, 0.26);   
+}
+.item:hover{
+    background-color: purple ;
+    scale: 1.05;
+    border: .5px solid rgba(0, 0, 0, 0.26);   
+}

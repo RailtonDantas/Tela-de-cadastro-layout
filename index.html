@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/movel.css" media="screen and (max-width:500px)">
+</head>
+<body>
+    <!-- eu preciso dar um jeito de deixar a letra sem a opacidade da div de cadastro -->
+    <div id="container">
+        <div class="contcircle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="contcad">
+                <form action="cad.php" method="post" autocomplete="off">
+                    <h1>Cadastre-se acessar o curso!</h1>
+                    <fieldset>
+                        <div class="item">
+                            <label for="inome">Nome:</label>
+                            <input type="text" name="nome" id="inome" required maxlength="100" placeholder="Digite seu nome">
+                        </div>
+                        <div class="item">
+                            <label for="iemail">Email:</label>
+                            <input type="email"  name="email" id="iemail" required placeholder="exemplo123@gmail.com">
+                        </div>
+                        <div class="item">
+                            <label for="isen">Senha:</label>
+                            <input type="password" name="pass" id="isen" required>
+                        </div>
+                    </fieldset>
+                    
+                        <div class="item item2">
+                             <input class="buttons" type="submit" value="Enviar">
+                        </div>
+                        <div class="item item2">
+                            <input class="buttons" type="reset" value="Limpar">
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
